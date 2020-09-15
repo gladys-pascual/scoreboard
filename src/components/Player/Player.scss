@@ -1,0 +1,34 @@
+@import "../../assets/variables.scss";
+
+.player {
+  display: flex;
+  font-size: 24px;
+  border-bottom: solid 2px #eeeeee;
+  align-items: center;
+
+  .player-name:hover .remove-player {
+    visibility: visible;
+  }
+  .player-name {
+    color: $theme-color;
+    flex-grow: 1;
+    padding-left: 10px;
+  }
+  .remove-player {
+    font-size: $button-font-size;
+    border: none;
+    outline: none;
+    color: pink;
+    cursor: pointer;
+    margin: 0 10px 0 0;
+    padding: 0;
+    background: none;
+  }
+  .remove-player:hover {
+    color: $remove-color;
+  }
+}
+
+.player:last-of-type {
+  border-bottom-color: $theme-color;
+}

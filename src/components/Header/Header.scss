@@ -1,0 +1,11 @@
+@import "../../assets/variables.scss";
+
+header {
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: $theme-color;
+  border-bottom: solid 2px $theme-color;
+}

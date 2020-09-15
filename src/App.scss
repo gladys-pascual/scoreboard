@@ -1,0 +1,18 @@
+@import "./assets/variables.scss";
+
+* {
+  font-family: "Schoolbell", cursive;
+}
+
+body {
+  font-family: arial;
+  text-transform: uppercase;
+}
+
+.scoreboard {
+  width: 700px;
+  margin: 70px auto;
+  border: solid 2px $theme-color;
+  border-radius: 6px;
+  overflow: hidden;
+}
