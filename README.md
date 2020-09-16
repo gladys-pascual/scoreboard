@@ -1,4 +1,4 @@
-I created a _scoreboard_ app using React
+I created a **scoreboard** app using React
 
 ## Technologies used:
 
