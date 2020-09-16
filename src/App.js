@@ -38,7 +38,6 @@ class App extends Component {
 
   handleScoreChange = (index, delta) => {
     this.setState((prevState) => {
-      debugger;
       return {
         score: (prevState.players[index].score = Math.max(
           prevState.players[index].score + delta,

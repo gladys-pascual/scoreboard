@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Stopwatch.scss";
 
 class Stopwatch extends Component {
   state = {
@@ -6,14 +7,6 @@ class Stopwatch extends Component {
     elapsedTime: 0,
     previousTime: 0,
   };
-
-  componentDidMount() {
-    this.intervalID = setInterval(() => this.tick(), 100);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.intervalID);
-  }
 
   tick = () => {
     if (this.state.isRunning) {
@@ -24,6 +17,14 @@ class Stopwatch extends Component {
       }));
     }
   };
+
+  componentDidMount() {
+    this.intervalID = setInterval(() => this.tick(), 100);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.intervalID);
+  }
 
   handleStopwatch = () => {
     this.setState((prevState) => ({
@@ -40,7 +41,6 @@ class Stopwatch extends Component {
 
   render() {
     const seconds = Math.floor(this.state.elapsedTime / 1000);
-
     return (
       <div className="stopwatch">
         <h2>Stopwatch</h2>
@@ -48,7 +48,7 @@ class Stopwatch extends Component {
         <button onClick={this.handleStopwatch}>
           {this.state.isRunning ? "Stop" : "Start"}
         </button>
-        <button onClick={this.handleReset}> Reset</button>
+        <button onClick={this.handleReset}> Reset </button>
       </div>
     );
   }

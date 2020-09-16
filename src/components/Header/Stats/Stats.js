@@ -1,10 +1,16 @@
 import React from "react";
+import "./Stats.scss";
 
-const Stats = () => {
+const Stats = ({ players }) => {
+  const totalPlayers = players.length;
+  const totalPoints = players.reduce((total, player) => {
+    return total + player.score;
+  }, 0);
   return (
-    <table className="stats">
-      <p> stats</p>
-    </table>
+    <div className="stats">
+      <p>Total Players: {totalPlayers}</p>
+      <p>Total Points: {totalPoints}</p>
+    </div>
   );
 };
 

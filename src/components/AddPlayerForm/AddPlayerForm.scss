@@ -49,3 +49,10 @@ input[type="submit"] {
   outline: none;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
+
+input[type="submit"]:hover {
+  background: #fff;
+  color: black;
+  cursor: pointer;
+  border: 1px solid $theme-color;
+}
