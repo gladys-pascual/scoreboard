@@ -18,3 +18,9 @@ I created a [**scoreboard**](https://score-me.netlify.app/) app using React.
 
 - react
 - node-sass
+
+
+## Demo
+
+![scoreboard-1](public/demo/scoreboard-1.gif)
+![scoreboard-2](public/demo/scoreboard-2.gif)
